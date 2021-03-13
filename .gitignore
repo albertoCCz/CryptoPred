@@ -1,0 +1,9 @@
+# Ignore directories
+Data/
+Recursos/
+
+# Ignore python env directory
+env/
+
+# Ignore files
+TODO.txt
