@@ -99,10 +99,8 @@ def plot_data(df, plot_bb_bands=True):
 	for lim in range(len(os_in_interval)):
 	    if (lim % 2 == 0) & ((lim + 1) < (len(os_in_interval))):
 	        axes[2].axvspan(os_in_interval[lim], os_in_interval[lim+1], color='green', alpha=0.4)
-	
-	axes[2].set_xticks(pd.date_range(start=df.index.values[0],
-									 end=df.index.values[-1],
-									 freq='3H').strftime('%Y-%m-%d %H:%M:%S').values.tolist())
+    
+	axes[2].set_xticks(df.index.values[np.round(np.linspace(0, len(df.index.values) - 1, 6)).astype(int)])
 	axes[2].grid()
 
 	return fig
