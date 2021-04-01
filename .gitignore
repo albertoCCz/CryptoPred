@@ -4,11 +4,10 @@
 # Ignore directories
 Recursos/
 Pruebas/
-Data/
+Data/Raw/
 
 # Ignore files
-Data/pip_list.txt
-!Data/Formatted/btcusd_fmttd.csv
+
 
 # Ignore python env directory
 env/
