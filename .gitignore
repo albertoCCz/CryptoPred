@@ -4,6 +4,7 @@
 # Ignore directories
 Data/
 Recursos/
+Pruebas/
 
 # Ignore python env directory
 env/
