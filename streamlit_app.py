@@ -38,7 +38,7 @@ init_time = init_time.strftime('%Y-%m-%d %H:%M:%S')
 final_time = final_time.strftime('%Y-%m-%d %H:%M:%S')
 
 
-@st.cache
+@st.cache_data
 def select_data(init_time, final_time):
 	"""
 	Function to select data in period [init_time, final_time]

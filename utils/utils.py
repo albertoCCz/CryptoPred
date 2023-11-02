@@ -62,7 +62,7 @@ def plot_data(df, plot_bb_bands=True):
 	fig, axes = plt.subplots(3, 1, sharex=True, figsize=(12,9), gridspec_kw={'height_ratios': [3, 1, 1]})
 
 	# Global figure conditions
-	plt.xticks(rotation='30')
+	plt.xticks(rotation=30)
 
 	# Plot BTC/USD graph and indicators: sma, ema
 	axes[0].plot(df.index, df['close'], linewidth=1.5, label='btc/usd')
